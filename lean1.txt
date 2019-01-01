@@ -1,0 +1,272 @@
+Audit Query (web)  yes
+https://community.backbase.com/documentation/Retail-Banking/2-11-2/ext-bb-audit-query-ng
+Ability to filter the audit query by:
+Start and end date
+Category
+Type
+Status
+Service agreement
+Legal entity
+User
+
+widget-bb-authorization-ng  yes
+https://community.backbase.com/documentation/Business-Banking-API/2-11-2/widget-bb-authorization-ng
+Imports
+lib-bb-event-bus-ng
+lib-bb-model-errors
+lib-bb-widget-extension-ng
+model-bb-payment-ng
+vendor-bb-angular
+
+model-bb-payment-ng   yes
+https://community.backbase.com/documentation/Business-Banking-API/2-11-2/model-bb-payment-ng#AccountView
+Imports
+data-bb-contact-http-ng
+data-bb-payments-http-ng
+data-bb-product-summary-http-ng
+lib-bb-model-errors
+lib-bb-widget-ng
+vendor-bb-angular
+
+data-bb-audit-http-ng
+https://community.backbase.com/documentation/Business-Banking-API/2-11-2/data-bb-audit-http-ng#data-bb-audit-http-ngauditDataKey
+Imports
+vendor-bb-angular
+
+Module/Endpoint List
+https://community.backbase.com/documentation/Business-Banking/2-11-2/modendtbl
+
+
+
+
+
+
+api
+lib-bb-model-errors  yes
+Provides a unified set of errors that can be returned from the Model layer, isolating the Widget and UI layer from the details of the underlying HTTP errors.
+https://community.backbase.com/documentation/Entitlements-Collection-API/2-11-2/lib-bb-model-errors
+
+ui-bb-confirm-ng
+UI component for displaying the confirmation modal dialog.
+Imports
+ui-bb-modal-ng   yes
+vendor-bb-angular
+vendor-bb-angular-sanitize
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/ui-bb-confirm-ng
+
+ui-bb-modal-ng   yes
+UI component for displaying the custom modal.
+Imports
+vendor-bb-angular
+vendor-bb-uib-modal
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/ui-bb-modal-ng
+
+ui-bb-draft-edit-ng
+Imports
+ui-bb-dropdown-select-ng
+ui-bb-rich-text-editor-ng
+vendor-bb-angular
+<ui-bb-draft-edit-ng
+   data-topics="$ctrl.topics"
+   data-config="$draftCtrl.config"
+   data-on-close="$draftCtrl.dismiss()"
+   data-on-send="$draftCtrl.send(draft)"
+   data-messages="{
+     labelClose: ('ui-bb-draft-ng.label.close' | i18n),
+     labelSend: ('ui-bb-draft-ng.label.send' | i18n),
+     labelRemove: ('ui-bb-draft-ng.label.remove' | i18n),
+     labelToggleImportance: ('ui-bb-draft-ng.label.toggleImportance' | i18n),
+     formHeader: ('ui-bb-draft-ng.form.header' | i18n),
+     formSubject: ('ui-bb-draft-ng.form.subject' | i18n),
+     formTopic: ('ui-bb-draft-ng.form.topic' | i18n),
+     formMessage: ('ui-bb-draft-ng.form.message' | i18n),
+     formSend: ('ui-bb-draft-ng.form.send' | i18n),
+     errorSend: ('ui-bb-draft-ng.error.send' | i18n),
+   }"></ui-bb-draft-edit-ng>
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/ui-bb-draft-edit-ng
+
+widget-bb-notification-center-ng res
+Notifications center widget.
+Imports
+lib-bb-event-bus-ng
+lib-bb-intent-ng
+lib-bb-model-errors
+model-bb-notifications-ng
+vendor-bb-angular
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/widget-bb-notification-center-ng#NotificationCenterController_totalItems
+
+Notification Popups (web)  res like update popup
+Allows notifications to be shown in the portal UI as a popup or a sticky message.
+https://community.backbase.com/documentation/Business-Banking/2-11-2/ext-bb-notification-popups-ng
+widget-bb-notification-popups-ng
+https://community.backbase.com/documentation/Business-Banking/2-11-2/widget-bb-notification-popups-ng
+
+ext-bb-select-context-ng yes
+Select context extension for widget-bb-select-context-ng
+Imports
+ui-bb-autocomplete-search-ng
+ui-bb-i18n-ng
+ui-bb-loading-overlay-ng
+vendor-bb-angular-ng-aria
+https://community.backbase.com/documentation/Business-Banking-API/2-11-2/ext-bb-select-context-ng
+
+Initiate US Domestic Wire Payment Business Extension (web) yes
+https://community.backbase.com/documentation/Business-Banking/2-11-2/ext-bus-initiate-payment-us-domestic-wire-ng
+
+widget-bb-standing-payment-orders-ng res
+Shows standing orders list
+Imports
+lib-bb-event-bus-ng
+lib-bb-model-errors
+lib-bb-permissions-ng
+lib-bb-widget-extension-ng
+model-bb-payment-orders-ng
+vendor-bb-angular
+
+Table of Contents
+StandingOrdersController
+#loadMore(done)
+#changePage()
+#onSort(orderBy, direction)
+#onSearchSubmit()
+#onSearchClear()
+#getAccountsFrom(params)
+#selectAccountFrom(identifier, name)
+#onApplyFilter()
+#authorize(paymentId)
+#reject(paymentId)
+#cancel(paymentId, version)
+#deletePayment(paymentId, version)
+#approveBulk()
+#$onInit()
+#privileges
+Hooks
+#processStandingOrders(payments)
+#defaultSortableColumn()
+#defaultSortableDirection()
+#truncateParams()
+https://community.backbase.com/documentation/Business-Banking-API/2-11-2/widget-bb-standing-payment-orders-ng
+
+ext-bb-messages-controls-ng
+Imports
+ui-bb-confirm-ng
+ui-bb-draft-edit-ng
+ui-bb-i18n-ng
+ui-bb-modal-ng
+vendor-bb-angular-ng-aria
+vendor-bb-uib-accordion
+Table of Contents
+Helpers
+#openModalWindow(ext)
+#closeModalWindow(ext)
+#setConfirmationState(ext, isEmpty)
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/ext-bb-messages-controls-ng
+
+Standing Payment Orders List (web)  yes
+Displays the standing orders applicable to the current user's legal entity, which often consist of recurring payment orders. On selecting a standing order additional details are shown.
+https://community.backbase.com/documentation/Business-Banking/2-11-2/ext-bus-standing-payment-orders-list-ng
+
+Transaction List (web)  yes
+Displays an overview of all the transactions for the current user's accounts.
+https://community.backbase.com/documentation/Business-Banking/2-11-2/ext-bus-transaction-list-ng
+
+ui-bb-dropdown-select-ng  yes
+UI dropdown select component
+mports
+vendor-bb-angular
+vendor-bb-uib-dropdown
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/ui-bb-dropdown-select-ng
+
+vendor-bb-uib-modal
+Angular UI Bootstrap modal component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+vendor-bb-uib-position
+vendor-bb-uib-stacked-map
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-modal
+
+vendor-bb-uib-tabs  yes
+Angular UI Bootstrap tabs component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-tabs
+
+vendor-bb-uib-tooltip  yes
+Angular UI Bootstrap tooltip component written in pure AngularJS based on Bootstrap's markup and CSS
+Imports
+vendor-bb-angular
+vendor-bb-uib-position
+vendor-bb-uib-stacked-map
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-tooltip
+
+vendor-bb-uib-datepicker yes
+Angular UI Bootstrap datepicker component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+vendor-bb-uib-dateparser
+vendor-bb-uib-is-class
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-datepicker
+
+vendor-bb-uib-popover yes
+Angular UI Bootstrap popover component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+vendor-bb-uib-tooltip
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-popover
+
+vendor-bb-uib-pagination  yes
+Angular UI Bootstrap pagination component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+vendor-bb-uib-paging
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-pagination
+
+vendor-bb-uib-dropdown  yes
+Angular UI Bootstrap dropdown component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+vendor-bb-uib-position
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-dropdown
+
+vendor-bb-uib-buttons yes
+Angular UI Bootstrap buttons component written in pure AngularJS based on Bootstrap's markup and CSS.
+Imports
+vendor-bb-angular
+https://community.backbase.com/documentation/Retail-Banking-API/2-11-2/vendor-bb-uib-buttons
+
+
+
+
+
+
+widget-instructor-status-ng
+#changePage()
+onSort(orderBy, direction)
+onFilter(filter, direction)
+$onInit()
+summary(summaryId)
+request summary status
+summaryMultiple(selectedSummarys)
+request list of summary statuses
+Hooks
+processSummary(summarys)
+hooks for processing summary
+
+mode-instructor-status-ng
+#getAccountsFrom()
+return promise of array of AccouuntView
+#getAccountsTo()
+return promise of array of AccouuntView
+#getSummarys(params)
+get summarys data
+#storeSummarys(summarys)
+stores a given list of summarys as current in sync preferences
+#getSummarysPreferences()
+tries to read the stored summarys from sync prefereces
+
+intent.bus.summary.table.search
+Trigger search using passed in argument values. On a new search filters are disabled according to passed in argument values.
+
+<extension-name>/templates/template.ng.html.
+
+bb.event.messaging.draft.init
